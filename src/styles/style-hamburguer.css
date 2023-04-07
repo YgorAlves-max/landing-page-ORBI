@@ -99,3 +99,21 @@
   -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(-4px, -4px);
   transform: rotateZ(45deg) scaleX(1.4) translate(-4px, -4px);
 }
+
+
+.title-circle {
+  position: relative;
+  padding-left: 20px; /* Adicione um espaço à esquerda para o círculo */
+}
+
+.title-circle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px; /* Tamanho do círculo */
+  height: 10px; /* Tamanho do círculo */
+  background-color: #FF0A6B; /* Cor do círculo */
+  border-radius: 50%; /* Forma circular */
+}
